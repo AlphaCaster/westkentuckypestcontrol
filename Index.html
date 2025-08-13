@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spirit vs. Flesh — Object Selector</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Click objects to animate them off to the right side and remove them from the page." />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Spirit vs. Flesh — Objects</h1>
+    <div class="controls">
+      <button id="resetBtn" class="btn" aria-label="Reset all objects">Reset All</button>
+    </div>
+  </header>
+
+  <main>
+    <p class="lead">
+      Tap an object. It will slide to the right and vanish—just like handing it off behind the screen.  
+      (Use <strong>Reset All</strong> to bring them back.)
+    </p>
+
+    <!-- This is where the object “chips” render -->
+    <section id="objectsGrid" class="objects-grid" aria-live="polite"></section>
+
+    <!-- Offscreen target rail (visual hint only on wide screens) -->
+    <div class="exit-rail" aria-hidden="true"></div>
+  </main>
+
+  <footer class="site-footer">
+    <small>Made for your Forrest Frank healing lesson • Pure HTML/CSS/JS • Host anywhere</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
